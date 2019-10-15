@@ -11,7 +11,7 @@ public class CoffeeMachine {
     private String input;
     private State state = State.READY;
 
-    DisplayGraphic displayGraphic;
+    DisplayGraphic displayGraphic = new DisplayGraphic();
 
     CoffeeMachine (int milk, int coffeeBeans, int water, int cups, int money) {
         this.water = water;
@@ -27,7 +27,7 @@ public class CoffeeMachine {
 
     void start() {
         System.out.println(MAIN_TITTLE);
-        displayGraphic.showProgressBarr(100);
+         displayGraphic.showProgressBarr(100);
         whatMachineHas();
     }
 
